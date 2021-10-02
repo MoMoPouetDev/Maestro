@@ -1,15 +1,15 @@
 #coding: utf-8
 
-'''
-Tables des correspondances
+   
+#Tables des correspondances
 
-	Le rang 0 correspond à la position de l'information dans la trame MAESTRO
-	Le rang 1 correspond a l'intitulé publié sur le broker
-	Le rang 2 (optionnel) permet de remplacer le code de la trame par une information texte correspondante
+#	Le rang 0 correspond à la position de l information dans la trame MAESTRO
+#	Le rang 1 correspond a l intitule publie sur le broker
+#	Le rang 2 (optionnel) permet de remplacer le code de la trame par une information texte correspondante
 
-'''
+   
 RecuperoInfo=[
-	[1,"Etat du poêle",[
+	[1,"Etat du poele",[
 						[0, "Eteint"],
 						[1, "Controle du poele froid / chaud"],
 						[2, "Clean Froid"],
@@ -32,33 +32,33 @@ RecuperoInfo=[
 						[41, "Refroidissement en cours"],
 						[42, "Nettoyage basse p."],
 						[43, "Nettoyage haute p."],
-						[44, "Débloquage vis sans fin"],
+						[44, "Debloquage vis sans fin"],
 						[45, "AUTO ECO"],
 						[46, "Standby"],
 						[48, "Diagnostique"],
 						[49, "CHARG. VIS SANS FIN"],
-						[50, "Erreur A01 - Allumage raté"],
+						[50, "Erreur A01 - Allumage rate"],
 						[51, "Erreur A02 - Pas de flamme"],
-						[52, "Erreur A03 - Surchauffe du réservoir"],
-						[53, "Erreur A04 - Température des fumées trop haute"],
+						[52, "Erreur A03 - Surchauffe du reservoir"],
+						[53, "Erreur A04 - Temperature des fumees trop haute"],
 						[54, "Erreur A05 - Obstruction conduit - Vent"],
 						[55, "Erreur A06 - Mauvais tirage"],
-						[56, "Erreur A09 - Défaillance sonde de fumées"],
-						[57, "Erreur A11 - Défaillance motoréducteur"],
-						[58, "Erreur A13 - Température carte mère trop haute"],
-						[59, "Erreur A14 - Défaut Active"],
-						[60, "Erreur A18 - Température d'eau trop haute"],
-						[61, "Erreur A19 - Défaut sonde température eau"],
-						[62, "Erreur A20 - Défaut sonde auxiliaire"],
+						[56, "Erreur A09 - Defaillance sonde de fumees"],
+						[57, "Erreur A11 - Defaillance motoreducteur"],
+						[58, "Erreur A13 - Temperature carte mere trop haute"],
+						[59, "Erreur A14 - Defaut Active"],
+						[60, "Erreur A18 - Temperature d eau trop haute"],
+						[61, "Erreur A19 - Defaut sonde temperature eau"],
+						[62, "Erreur A20 - Defaut sonde auxiliaire"],
 						[63, "Erreur A21 - Alarme pressostat"],
-						[64, "Erreur A22 - Défaut sonde ambiante"],
-						[65, "Erreur A23 - Défaut fermeture brasero"],
-						[66, "Erreur A12 - Panne controleur motoréducteur"],
+						[64, "Erreur A22 - Defaut sonde ambiante"],
+						[65, "Erreur A23 - Defaut fermeture brasero"],
+						[66, "Erreur A12 - Panne controleur motoreducteur"],
 						[67, "Erreur A17 - Bourrage vis sans fin"],
-						[69, "Attente Alarmes securité"],
+						[69, "Attente Alarmes securite"],
 						]],
-	[2,"Etat du ventilateur d'ambiance",[
-										[0, "Désactivé"],
+	[2,"Etat du ventilateur d ambiance",[
+										[0, "Desactive"],
 										[1, "Niveau 1"],
 										[2, "Niveau 2"],
 										[3, "Niveau 3"],
@@ -66,23 +66,23 @@ RecuperoInfo=[
 										[5, "Niveau 5"],
 										[6, "Automatique"],
 										]],
-	[5,"Température des fumées"],
-	[6,"Température ambiante"],
+	[5,"Temperature des fumees"],
+	[6,"Temperature ambiante"],
 	[10,"Etat de la bougie"],
 	[11,"ACTIVE - Set"],
-	[12,"RPM - Ventilateur fummées"],
+	[12,"RPM - Ventilateur fummees"],
 	[13,"RPM - Vis sans fin - SET"],
 	[14,"RPM - Vis sans fin - LIVE"],
-	[20,"Etat du mode Active"],  #0: Désactivé, 1: Activé
+	[20,"Etat du mode Active"],  #0: Desactive, 1: Active
 	[21,"ACTIVE - Live"],
-	[22,"Mode de régulation",[
+	[22,"Mode de regulation",[
 								[0, "Manuelle"],
 								[1, "Dynamique"],
 								]],
 	[23,"Mode ECO"],
 	[25,"Mode Chronotermostato"],
 	[26,"TEMP - Consigne"],
-	[28,"TEMP - Carte mère"],
+	[28,"TEMP - Carte mere"],
 	[29,"Puissance Active",[
 							[11, "Puissance 1"],
 							[12, "Puissance 2"],
@@ -90,11 +90,11 @@ RecuperoInfo=[
 							[14, "Puissance 4"],
 							[15, "Puissance 5"],
 							]],
-	[32,"Heure du poêle (0-23)"],
-	[33,"Minutes du poêle (0-29)"],
-	[34,"Jour du poêle (1-31)"],
-	[35,"Mois du poêle (1-12)"],
-	[36,"Année du poêle"],
+	[32,"Heure du poele (0-23)"],
+	[33,"Minutes du poele (0-29)"],
+	[34,"Jour du poele (1-31)"],
+	[35,"Mois du poele (1-12)"],
+	[36,"Annee du poele"],
 	[37,"Heures de fonctionnement total (s)"],
 	[38,"Heures de fonctionnement en puissance 1 (s)"],
 	[39,"Heures de fonctionnement en puissance 2 (s)"],
@@ -103,10 +103,10 @@ RecuperoInfo=[
 	[42,"Heures de fonctionnement en puissance 5 (s)"],
 	[43,"Heures avant entretien"],
 	[44,"Minutes avant extinction"],
-	[45,"Nombre d'allumages"],
+	[45,"Nombre d allumages"],
 	[49,"Etat effets sonores"],
 	[51,"Mode",[
 				[0, "Hiver"],
-				[1, "Eté"],
+				[1, "Ete"],
 				]],
 	]
